@@ -1,0 +1,121 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	background-image: linear-gradient(to bottom, #fff -20%, #a3bfd4 30%);
+}
+.container {
+	width: 450px;
+	height: 100vh; /*height'ga qaysi qiymat berilgani to'g'riroq bo'ladi ? ( px, %, vh... )*/  /*min-h   bodyga*/
+	margin: 50px auto;
+}
+header {
+	padding: 10px;
+	background-color: #6697d2;
+	background-image: url(../img/x-mark-64.png);
+	background-position: right 20px center;
+	background-repeat: no-repeat;
+	background-size: 15px;
+}
+header span {
+	color: #fff;
+}
+.dot {
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	margin: 10px;
+	border-radius: 50%;
+	vertical-align: middle;
+	background-color: #fff;
+}
+main {
+	position: relative;
+	padding: 30px 15px 0;
+	background-color: #fff;
+}
+.wrap {
+	padding: 10px;
+	border-top: 1px solid #b8b6b9;
+	border-bottom: 1px solid #b8b6b9;
+}
+.date {
+	color: #b8b6b9;
+	position: absolute;
+	top: -4px;
+	left: 42%;
+	padding: 10px;
+	background-color: #fff;
+	text-transform: uppercase;
+}
+time {
+	display: flex;
+	color: #b8b6b9;
+}
+.mark-msg-t {
+	position: absolute;
+	top: -18px;
+	right: 4px;
+}
+.mark {
+	position: relative;
+	display: flex;
+	margin-top: 8px;
+	justify-content: flex-end;
+}
+.user {
+	display: inline-block;
+	margin: 8px 5px 15px;
+	padding: 8px 10px;
+}
+.unknown-user {
+	background-color: #e4eff4;
+}
+.unknown__user {
+	position: relative;
+}
+.unknown-user::before {
+	content: '';
+	position: absolute;
+	top: 26px;
+	left: -13px;
+	border-radius: 6px;
+	border-top: 18px solid #e4eff4;
+	border-left: 18px solid transparent;
+	border-right: 18px solid transparent;
+}
+.mark-message {
+	background-color: #f1f1f1;
+}
+.mark-message::before {
+	content: '';
+	position: absolute;
+	top: 8px;
+	right: -13px;
+	border-radius: 6px;
+	border-top: 18px solid #f1f1f1;
+	border-left: 18px solid transparent;
+	border-right: 18px solid transparent;
+}
+.mark-angry {
+	background-color: #f8c0bb;
+}
+footer {
+	padding: 10px;
+	background-color: #fff;
+}
+form {
+	display: flex;
+	justify-content: space-between;
+}
+footer input {
+	border: none;
+	padding: 10px;
+}
+footer button {
+	color: #00f;
+	border: none;
+	letter-spacing: 1px;
+	background-color: #fffc;
+}
